@@ -4,3 +4,10 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 webgazer.setGazeListener((data,timestamp) =>{
     console.log(data,timestamp)
 }).begin()
+
+document.addEventListener('keydown', (event) => {
+    var name = event.key;
+    var code = event.code;
+    // Alert the key name and key code on keydown
+    alert(`Key pressed ${name} \r\n Key code value: ${code}`);
+  }, false);
