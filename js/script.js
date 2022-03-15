@@ -9,5 +9,5 @@ document.addEventListener('keydown', (event) => {
     var name = event.key;
     var code = event.code;
     // Alert the key name and key code on keydown
-    //document.dispatchEvent(gazeMoveEvent);
+    document.dispatchEvent(gazeMoveEvent);
   }, false);
